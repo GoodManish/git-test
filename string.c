@@ -22,6 +22,20 @@ int main(void)
    for (i = 0; i < 2; ++i)
       
    printf("string lenght of %s = %lu\n", s[i], my_strlen(s[i]));
-
+   printf("%s\n", my_strcpy(p1, "Hello, World !!!"));
+   
    return 0;
+}
+
+char *my_strcpy(char *t, char *s)
+{
+   
+   char *p = t;
+   
+    while (*t++ = *s++)
+    ;
+   
+   
+   return p;
+   
 }
