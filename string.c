@@ -1,5 +1,18 @@
 #include <stdio.h>
 
+char *trim(char *value, char *s)
+{
+   
+   char *param = value;
+   
+    while (*value++ = *s++)
+    ;
+   
+   
+   return param;
+   
+}
+
 size_t my_strlen(const char *s)
 {
   const char *p = s;
