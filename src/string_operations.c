@@ -1,17 +1,25 @@
 #include <stdio.h>
 #include <wchar.h>
 
-size_t my_wstrlen(const wchar_t *s)
+wchar_t *my_wstrchr(wchar_t *ws, wchar_t wc)
 {
    
    const wchar_t *p = s;
    
-   
-   while (*p)
-    ++p;
-    return (p - s);
+    while (*ws) 
+   {
+      
+      if (*ws == wc)
+      
+      return ws;
+      
+      ++ws;
+       
+   }
+   return NULL;
    
 }
+
 
 char *trim(char *value, char *s)
 {
